@@ -32,7 +32,7 @@ for x in array:
 
 if flag == 1:
 	print(str(maxSum) + ' ' + str(head) + ' ' + str(tail))
-if flag == -1 and negativeNumbCounter == 0:
+elif negativeNumbCounter == 0:
 	print(str(0) + ' ' + str(array[0]) + ' ' + str(array[size-1]))
 else: 
 	print(str(0) + ' ' + str(0) + ' ' + str(0))

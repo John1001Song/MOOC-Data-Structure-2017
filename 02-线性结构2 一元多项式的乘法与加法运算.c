@@ -41,6 +41,26 @@ Polynomial ReadPoly(){
   return P;
 }
 
+void PrintPoly(Polynomial P) {
+  int flag = 0;
+
+  if (!P){
+    printf("0 0\n");
+    return;
+  }
+
+  while (P) {
+    if (!flag) {
+      flag = 1;
+    }
+    else
+      printf(" ");
+    printf("%d %d", P->coef, P->expon);
+    P = P->link;
+  }
+  printf("\n");
+}
+
 Polynomial Add(Polynomial P1, Polynomial P2){
 
   t1 = P1;
